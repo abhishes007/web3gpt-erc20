@@ -1,5 +1,5 @@
 async function main() {
-    const TestToken = await ethers.getContractFactory("TestToken");
+    const TestToken = await ethers.getContractFactory("AnotherERC20Token");
     const testToken = await TestToken.deploy();
     await testToken.deployed();
     console.log("TestToken deployed to:", testToken.address);
